@@ -7,7 +7,6 @@ Scenario: scenario 1 ligne 3
 
   Then display the product "Carrot"
   
-
 Scenario: scenario 1 ligne 4
   Given I visit page GreenKart 
 
@@ -16,14 +15,12 @@ Scenario: scenario 1 ligne 4
   Then display the product "Cucumber"
   And display the product "Capsicum"
 
-
 Scenario: scenario 1 ligne 5
   Given I visit page GreenKart 
 
   When I search keyword .
   
   Then display error message
-
 
 Scenario: scenario 2 ligne 6
   Given I visit page GreenKart 
@@ -36,7 +33,6 @@ Scenario: scenario 2 ligne 6
   Then  display the product name "Carrot - 1 Kg" on the basket
   Then  display the product quantity 3 on the basket 
   Then  display 3 on the field quantity on the Carrot product details
-
  
 Scenario: scenario 2 ligne 7
   Given I visit page GreenKart 
@@ -48,7 +44,6 @@ Scenario: scenario 2 ligne 7
   Then  display the product name "Cucumber - 1 Kg" on the basket
   Then  display the product quantity 3 on the basket 
   Then  display 3 on the field quantity on the Cucumber product details
-
 
 Scenario: scenario 3 ligne 8
   Given I visit page GreenKart 
@@ -62,9 +57,6 @@ Scenario: scenario 3 ligne 8
   Then  display the product quantity 3 on the basket 
   Then  display 3 on the field quantity on the Carrot product details
   
-
-
-
 Scenario: scenario 3 ligne 9
   Given I visit page GreenKart 
 
@@ -75,7 +67,6 @@ Scenario: scenario 3 ligne 9
   
   Then display 0 on the field quantity on the Carrot product details
   Then display the basket is empty message
-
 
 Scenario: scenario 4 ligne 10
   Given I visit page GreenKart
@@ -147,7 +138,6 @@ Scenario: scenario 6 ligne 15
   Then  display the product name "Cucumber - 1 Kg" on the basket
   Then  display the product quantity 1 on the basket 
   Then  display number 1 on the field quantity on the Cucumber product details
-
 
 Scenario: scenario 7 ligne 16
   Given I visit page GreenKart
