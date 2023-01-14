@@ -54,7 +54,7 @@ import { When, Then, Given, And } from 'cypress-cucumber-preprocessor/steps'
 
         Then('display number {int} on the field quantity on the Cucumber product details', (quantity) => {
             cy.get('.products > :nth-child(1) > .stepper-input > .quantity').should('have.value', quantity)
-        
+            cy.get('.products > :nth-child(1) > .stepper-input > .quantity').then(($el) => { expect($el).to.have.value(quantity) })
         }) 
   
   
